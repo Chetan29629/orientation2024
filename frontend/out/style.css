@@ -1,0 +1,168 @@
+
+        :root{
+            --primary-color: rgb(23, 94, 114);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            /* width: 100vw; */
+            height: 100vh;
+        }
+
+        html {
+            height: 100%;
+          }
+          
+  
+          
+          .loaderContainer{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(245, 245, 245, 0.728);
+
+
+          }
+          .loader {
+            position: absolute;
+            top: calc(50% - 32px);
+            left: calc(50% - 32px);
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            perspective: 800px;
+
+            /* z-index: 10; */
+          }
+          
+          .inner {
+            position: absolute;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;  
+          }
+          
+          .inner.one {
+            left: 0%;
+            top: 0%;
+            animation: rotate-one 1s linear infinite;
+            border-bottom: 3px solid var(--primary-color);
+          }
+          
+          .inner.two {
+            right: 0%;
+            top: 0%;
+            animation: rotate-two 1s linear infinite;
+            border-right: 3px solid var(--primary-color);
+          }
+          
+          .inner.three {
+            right: 0%;
+            bottom: 0%;
+            animation: rotate-three 1s linear infinite;
+            border-top: 3px solid var(--primary-color);
+          }
+          
+          @keyframes rotate-one {
+            0% {
+              transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+            }
+            100% {
+              transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+            }
+          }
+          
+          @keyframes rotate-two {
+            0% {
+              transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+            }
+            100% {
+              transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+            }
+          }
+          
+          @keyframes rotate-three {
+            0% {
+              transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+            }
+            100% {
+              transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+            }
+          }
+
+        .bodyContainer{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            align-items: center;
+
+        }
+        .navbar {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            height: fit-content;
+            font-size: 1.5em;
+
+        }
+        .container {
+            width: 50%;
+            padding: 70px 40px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            /* z-index: 2; */
+            
+        }
+
+        .timer {
+            font-family: 'Arial', sans-serif;
+            font-size: 2em;
+            font-weight: bold;
+            color: #333;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+           width: auto ;
+            margin: 20px auto;
+        }
+        .question {
+            font-size: 1.3em;
+            margin-bottom:10px;
+        }
+        .options {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            margin-top: 30px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .next-button {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .next-button button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .next-button button:hover {
+            background-color: #555;
+        }

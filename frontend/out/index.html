@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientation Quiz</title>
+    <link rel="stylesheet" href="home.css" type="text/css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="loaderContainer" id="mainLoader">
+        <div class="loader">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+        </div>
+    </div>
+
+
+
+    <div class="navbar">
+        Orientation Quiz
+    </div>
+
+
+
+
+    <div class="bodyContainer" id="bodyContainer">
+        
+        
+
+
+        <div class="container">
+
+
+        <!-- <div class="questionContainer">
+            <div class="timer">
+                00:00
+             </div>
+             <div class="question">
+                 What is the capital of France?
+             </div>
+             <div class="options">
+                 <label><input type="radio" name="option" value="a"> Paris</label>
+                 <label><input type="radio" name="option" value="b"> London</label>
+                 <label><input type="radio" name="option" value="c"> Berlin</label>
+                 <label><input type="radio" name="option" value="d"> Madrid</label>
+             </div>
+             <div class="next-button">
+                 <button type="button">Next</button>
+             </div>
+        </div> -->
+
+
+
+
+
+        <div class="quizDetailsContainer">
+            <div class="welcome">
+                <h1>Welcome to Orientation Quiz</h1>
+               
+            </div>
+            <div class="quizDetails">
+                <input type="text" id="nameInput" placeholder="Enter your name" required>
+            </div>
+
+            <div class="quizDetails">
+                <input type="number" id="codeInput" placeholder="Enter Quiz Code" required>
+            </div>
+            <div class="start-button">
+                <button type="button" id="startButton" onclick="validateDetails()">Start Quiz</button>
+        
+        </div>
+
+
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
