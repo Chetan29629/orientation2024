@@ -226,6 +226,9 @@ app.use(express.json());
 // Create an HTTP server from the Express app
 const server = http.createServer(app);
 
+// Serve static files (HTML, CSS, JS) from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Create a WebSocket server attached to the same HTTP server
 const wss = new WebSocket.Server({ server });
 
